@@ -1,0 +1,57 @@
+@import "theme.css";
+
+:root {
+  min-width: 100px !important;
+  --toolbarbutton-icon-fill: var(--subtle) !important;
+  --lwt-text-color: var(--text) !important;
+  --toolbar-field-color: var(--text) !important;
+  --tab-selected-textcolor: var(--subtle) !important;
+  --toolbar-field-focus-color: var(--text) !important;
+  --toolbar-color: var(--text) !important;
+  --newtab-text-primary-color: var(--text) !important;
+  --arrowpanel-color: var(--text) !important;
+  --arrowpanel-background: var(--overlay) !important;
+  --sidebar-text-color: var(--text) !important;
+  --lwt-sidebar-text-color: var(--text) !important;
+  --lwt-sidebar-background-color: var(--base) !important;
+  --toolbar-bgcolor: var(--base) !important;
+  --newtab-background-color: var(--overlay) !important;
+}
+
+#permissions-granted-icon {
+  color: var(--text) !important;
+}
+
+.sidebar-placesTree {
+  background-color: var(--overlay) !important;
+}
+
+#urlbar-background {
+  background-color: var(--overlay) !important;
+}
+
+.tab-background[selected=""] {
+  background: var(--overlay) !important;
+}
+
+.content-shortcuts {
+  background-color: var(--overlay) !important;
+  border-color: var(--subtle) !important;
+}
+
+.urlbarView-url {
+  color: var(--subtle) !important;
+}
+
+toolbar .toolbarbutton-1 {
+  &:not([disabled]) {
+    &:is([open], [checked])
+      > :is(
+        .toolbarbutton-icon,
+        .toolbarbutton-text,
+        .toolbarbutton-badge-stack
+      ) {
+      fill: var(--base);
+    }
+  }
+}

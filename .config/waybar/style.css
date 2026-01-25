@@ -1,0 +1,106 @@
+@define-color maincolor #26bbd9;
+@define-color accentcolor #e0e0e0;
+@define-color bgmodule #16161c;
+@define-color background #1c1e26;
+
+/* General */
+* {
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    background: none;
+    font-family: "Nimbus Sans L";
+}
+
+button {
+    min-height: 0px;
+    min-width: 14px;
+}
+
+window#waybar {
+    background: @background;
+}
+
+/* Tooltips */
+tooltip {
+    border-radius: 0px; 
+    background-color: @bgmodule;
+}
+
+tooltip label {
+    color: @maincolor;
+    padding: 4.5px 1px 0 1px;
+}
+
+/* Custom Quicklinks & Modules */
+.modules-left, .modules-right, .modules-center {
+    border-radius: 0px;
+    background: @bgmodule; 
+}
+
+#pulseaudio, #custom-exit, #disk, #memory, #temperature {
+    border-radius: 0px;
+}
+
+#clock {
+    color: @accentcolor;
+    padding: 11px 0 7px 2px;
+}
+
+#pulseaudio {
+    color: @maincolor;
+    padding: 10px 0 1px 1px;
+    border-style: solid;
+    border-color: @background;
+    border-width: 2px 0 0 0;
+}
+
+#custom-appmenu {
+    padding-top: 5px;
+    color: @maincolor;
+}
+
+#custom-exit {
+    color: @maincolor;
+    padding: 5px 0 9px 2px;
+    border-style: solid;
+    border-color: @background;
+    border-width: 0 0 2px 0;
+}
+
+#network {
+    color: @accentcolor;
+    padding: 10px 0 10px 3px;
+}
+
+/* Workspaces */
+#workspaces {
+    all: initial;
+    padding: 12px 0 7px 0;
+}
+
+#workspaces button {
+    box-shadow: none;
+    color: @accentcolor;
+}
+
+#workspaces button.focused {
+    color: @maincolor;
+}
+
+/* Hardware Group */
+#cpu, #disk, #memory, #temperature {
+    color: @maincolor;
+    padding: 6px 0 6px 4px;
+    border-style: solid;
+    border-color: @background;
+    border-width: 2px 0 0 0;
+}
+
+#cpu {
+    padding-top: 8px;
+}
+
+#temperature {
+    padding-bottom: 8px;
+}

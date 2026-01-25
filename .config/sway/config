@@ -1,0 +1,144 @@
+xwayland disable
+### Autostart
+# Notification daemon
+exec mako
+# Multimedia service
+exec pipewire
+# Pipewire policy manager
+exec wireplumber
+# Pulseaudio compatibility layer
+exec pipewire-pulse
+# Permission authentication
+exec /usr/libexec/polkit-mate-authentication-agent-1
+# Clipboard content manager
+exec wl-paste -t text --watch clipman store --no-persist
+
+### Output configuration
+output * bg ~/.local/share/backgrounds/wallpaper.png fill
+
+### Idle configuration
+exec swayidle -w timeout 600 'swaylock -f' before-sleep 'swaylock -f'
+
+### Input configuration
+input "type:keyboard" xkb_layout "latam"
+
+## Cursor
+mouse_warping container
+seat * hide_cursor 15000
+seat * hide_cursor when-typing enable
+seat * xcursor_theme Bibata-Modern-Ice 24
+
+### Windows defaults
+gaps inner 1
+gaps outer 1
+client.focused #16161c #16161c #16161c #16161c
+client.unfocused #1c1e26 #1c1e26 #1c1e26 #1c1e26
+client.focused_inactive #1c1e26 #1c1e26 #1c1e26 #1c1e26
+
+## Windows rules
+# Idle inhibit for fullscreen windows
+for_window [all] inhibit_idle fullscreen
+# Border pixel for all windows
+for_window [all] border pixel 2
+
+# Floating windows
+for_window [app_id="xfce4-about"] floating enable, resize set 700 700
+for_window [app_id="thunar" title="Bulk.*"] floating enable, resize set 700 700
+for_window [app_id="thunar" title="^Rename.*"] floating enable, resize set 300 100
+for_window [app_id="thunar" title=".*Confirm.*"] floating enable, resize set 300 100
+for_window [app_id="thunar" title=".*Progress.*"] floating enable, resize set 300 100
+for_window [app_id="Firefox" title="Enter name of file to save to…"] floating enable, resize set 700 700
+
+### Key bindings
+## Basics:
+    # Kill focused window
+    bindsym --no-repeat Mod4+Q kill
+    # Reload the configuration file
+    bindsym --no-repeat Mod4+C reload
+    # Open file manager
+    bindsym --no-repeat Mod4+E exec thunar
+    # Open app launcher
+    bindsym --no-repeat Mod4+D exec fuzzel
+    # Open browser
+    bindsym --no-repeat Mod4+B exec firefox
+    # Open terminal
+    bindsym --no-repeat Mod4+Return exec foot
+    # Launch clipboard history
+    bindsym --no-repeat Mod4+V exec clipman pick -t wofi
+    # Show power menu
+    bindsym --no-repeat Mod4+S exec wlogout -b 1 -B 200 -L 590 -R 555 -T 200
+    # Show pop-up message asking to delete clipboard history
+    bindsym --no-repeat Mod4+Delete exec \
+        [ "$(echo "No\nYes" | wofi --dmenu --cache-file /dev/null --prompt "Delete clipboard history?")" = "Yes" ] \
+        && clipman clear --all
+ 
+    # Drag floating windows by holding down Mod4 and left mouse button.
+    # Resize them with right mouse button + Mod4.
+    floating_modifier Mod4 normal
+    
+## Moving around:
+    # Move your focus around
+    bindsym --no-repeat Mod4+Up focus up
+    bindsym --no-repeat Mod4+Down focus down
+    bindsym --no-repeat Mod4+Left focus left
+    bindsym --no-repeat Mod4+Right focus right
+
+    # Move the focused window with the same, but add Ctrl
+    bindsym Mod4+Ctrl+Up move up
+    bindsym Mod4+Ctrl+Down move down
+    bindsym Mod4+Ctrl+Left move left
+    bindsym Mod4+Ctrl+Right move right
+
+## Workspaces:
+    # Switch to workspace
+    bindsym --no-repeat Mod4+1 workspace number 1
+    bindsym --no-repeat Mod4+2 workspace number 2
+    bindsym --no-repeat Mod4+3 workspace number 3
+    bindsym --no-repeat Mod4+4 workspace number 4
+    bindsym --no-repeat Mod4+5 workspace number 5
+    bindsym --no-repeat Mod4+6 workspace number 6
+    bindsym --no-repeat Mod4+7 workspace number 7
+    bindsym --no-repeat Mod4+8 workspace number 8
+    bindsym --no-repeat Mod4+9 workspace number 9
+
+    # Move focused container to workspace
+    bindsym Mod4+Shift+1 move container to workspace number 1; workspace number 1
+    bindsym Mod4+Shift+2 move container to workspace number 2; workspace number 2
+    bindsym Mod4+Shift+3 move container to workspace number 3; workspace number 3
+    bindsym Mod4+Shift+4 move container to workspace number 4; workspace number 4
+    bindsym Mod4+Shift+5 move container to workspace number 5; workspace number 5
+    bindsym Mod4+Shift+6 move container to workspace number 6; workspace number 6
+    bindsym Mod4+Shift+7 move container to workspace number 7; workspace number 7
+    bindsym Mod4+Shift+8 move container to workspace number 8; workspace number 8
+    bindsym Mod4+Shift+9 move container to workspace number 9; workspace number 9
+
+    # Move between workspaces using the mouse wheel
+    bindsym --whole-window Mod4+Button4 workspace prev
+    bindsym --whole-window Mod4+Button5 workspace next
+    
+## Layout stuff:
+    # Make the current focus fullscreen
+    bindsym --no-repeat Mod4+F fullscreen
+
+    # Switch the current container to the toggle split layout
+    bindsym --no-repeat Mod4+T layout toggle split
+
+## Resizing containers:
+mode "resize" {    
+    # up will grow the containers height
+    # left will grow the containers width    
+    # down will shrink the containers height
+    # right will shrink the containers width
+    bindsym --no-repeat Up resize grow height 175px
+    bindsym --no-repeat Left resize grow width 350px
+    bindsym --no-repeat Down resize shrink height 175px
+    bindsym --no-repeat Right resize shrink width 350px
+
+    # Return to default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym --no-repeat Mod4+R mode "resize"
+
+### Enables the sidebar
+bar swaybar_command waybar

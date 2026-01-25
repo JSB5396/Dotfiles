@@ -1,0 +1,30 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": 32,
+  "spacing": 2,
+  "margin-top": 2,
+  "margin-left": 2,
+  "margin-bottom": 2,
+ 
+  "include": [ "~/.config/waybar/modules.json" ],
+
+  "modules-left": [
+    "clock",
+    "pulseaudio",
+    "custom/appmenu",
+    "custom/exit",
+    "network"
+  ],
+
+  "modules-center": [
+    "sway/workspaces"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "disk",
+    "memory",
+    "temperature"
+  ],
+}

@@ -1,0 +1,15 @@
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+language-servers = [ "gopls", "golangci-lint-lsp" ]
+
+[language-server.gopls.config]
+"ui.completion.usePlaceholders" = true
+"ui.completion.completionBudget" = "100ms"  
+"build.buildFlags" = ["-tags=tools"]
+"ui.diagnostic.staticcheck" = true
+"ui.navigation.importShortcut" = "Both"
+
+[language-server.golangci-lint-lsp.config]
+command = ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1"]

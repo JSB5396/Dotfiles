@@ -1,0 +1,95 @@
+{
+  // Workspaces
+  "sway/workspaces": {
+    "format": {}
+  },
+
+  // Fuzzel Application Launcher
+  "custom/appmenu": {
+    "rotate": 90,
+    "format": "",
+    "tooltip-format": "Apps",
+    "on-click": "fuzzel"
+  },
+
+  // Power Menu
+  "custom/exit": {
+    "format": "",
+    "tooltip-format": "Power Menu",
+    "on-click": "wlogout -b 1 -B 200 -L 590 -R 555 -T 200"
+  },
+
+  // Clock
+  "clock": {
+    "format": "{:%I\n%M\n}",
+    "timezone": "America/Argentina/Cordoba",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "format": {
+        "today": "<span color='#e95678'>{}</span>"
+      }
+    }
+  },
+
+  // CPU
+  "cpu": {
+    "rotate": 90,
+    "interval": 10,
+    "format": " {usage}%"
+  },
+
+  // Harddisc space used
+  "disk": {
+    "rotate": 90,
+    "interval": 300,
+    "format": " {percentage_used}%",
+    "path": "/"
+  },
+
+  // Memory
+  "memory": {
+    "rotate": 90,
+    "interval": 10,
+    "format": " {}%"
+  },
+
+  // Temperature
+  "temperature": {
+    "rotate": 90,
+    "interval": 30,
+    "hwmon-path": [
+      "/sys/class/hwmon/hwmon1/temp1_input",
+      "/sys/class/thermal/thermal_zone0/temp"
+    ],
+    "critical-threshold": 75,
+    "format-critical": " {temperatureC}°C",
+    "format": " {temperatureC}°C"
+  },
+
+  // Network
+  "network": {
+    "rotate": 90,
+    "interval": 5,
+    "format": " {bandwidthDownBytes}",
+    "format-ethernet:": " {bandwidthDownBytes}",
+    "format-disconnected": "Disconnected",
+    "tooltip-format": "{ipaddr}",
+    "tooltip-format-ethernet": "{ifname} 󰌘",
+    "tooltip-format-disconnected": "Disconnected 󰌙",
+    "min-lenght": 10,
+    "max-lenght": 10
+  },
+
+  // Pulseaudio
+  "pulseaudio": {
+    "rotate": 90,
+    "format": "{icon}",
+    "format-icons": {
+      "default": [ " ", " ", "" ]
+    },
+    "scroll-step": 8.0,
+    "on-click": "pavucontrol",
+    "tooltip-format": "{desc} | {volume}%",
+    "smooth-scrolling-threshold": 1
+  }
+}

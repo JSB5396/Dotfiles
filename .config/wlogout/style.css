@@ -1,0 +1,46 @@
+@define-color selectcolor #16161c;
+@define-color bgcolor #1c1e26;
+@define-color shutdowncolor #e95678;
+@define-color rebootcolor #26bbd9;
+
+/* General */
+* {
+    font-family: "Nimbus Sans L";
+    background-image: none;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+window {
+    background-color: transparent;
+}
+
+button {
+    border-color: @selectcolor;
+    background-color: @bgcolor;
+    border-width: 2px;
+    border-radius: 0px;
+    border-style: solid;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button:focus, button:active, button:hover {
+    outline-style: none;
+    background-color: @selectcolor;
+}
+
+/* Buttons */
+#shutdown {
+    color: @shutdowncolor;
+    border-width: 2px 2px 1px 1px;
+    background-image: image(url("icons/shutdown.svg"));
+}
+
+#reboot {
+    color: @rebootcolor;
+    border-width: 1px 2px 2px 1px;
+    background-image: image(url("icons/reboot.svg"));
+}
