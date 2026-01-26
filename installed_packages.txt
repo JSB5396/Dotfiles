@@ -72,8 +72,6 @@ ii firefox-147.0_1                    Mozilla Firefox web browser
 ii flite-2.2_1                        Lightweight speech synthesis engine
 ii fmt-12.1.0_1                       Modern formatting library
 ii font-alias-1.0.5_1                 Standard aliases for X11 PCF fonts
-ii font-awesome-4.7.0_3               An iconic font
-ii font-awesome5-5.15.4_2             Iconic font (version 5)
 ii font-awesome6-6.7.1_1              Iconic SVG, font, and CSS toolkit - desktop fonts
 ii font-util-1.4.1_1                  Tools for truncating and subseting of ISO10646-1 BDF fonts
 ii fontconfig-2.16.0_3                Library for configuring and customizing font access
@@ -210,7 +208,6 @@ ii libefivar-39_1                     Library to manipulate EFI variables
 ii libelf-0.192_2                     Utilities to handle ELF object files - runtime library
 ii libelogind-252.39_1                Standalone logind fork - elogind library
 ii libepoxy-1.5.10_1                  Library for handling OpenGL function pointer management for you
-ii liberation-fonts-ttf-2.1.5_2       Fonts from RedHat with same metrics as Times, Arial and Courier
 ii libev-4.33_1                       High-performance event loop loosely modelled after libevent
 ii libevdev-1.13.4_1                  Wrapper library for evdev devices
 ii libevent-2.1.12_3                  Abstract asynchronous event notification library
