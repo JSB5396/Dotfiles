@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Firefox
+Exec=nice -n 5 ionice -c2 -n7 firefox %u
+Terminal=false
+NoDisplay=false

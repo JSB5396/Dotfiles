@@ -60,7 +60,7 @@ for_window [app_id="Firefox" title="Enter name of file to save to…"] floating 
     # Open app launcher
     bindsym --no-repeat Mod4+D exec fuzzel
     # Open browser
-    bindsym --no-repeat Mod4+B exec firefox
+    bindsym --no-repeat Mod4+B exec nice -n 5 ionice -c2 -n7 firefox
     # Open terminal
     bindsym --no-repeat Mod4+Return exec foot
     # Launch clipboard history
