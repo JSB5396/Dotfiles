@@ -23,6 +23,7 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(git)
+
 source $ZSH/oh-my-zsh.sh
 
 # Preferred terminal text editor
@@ -48,7 +49,6 @@ alias pkgs='xbps-query -l | wc -l'
 alias stop-mysql='sudo rm /var/service/mysqld'
 alias change-theme='$HOME/.scripts/theme-changer.sh'
 alias start-mysql='sudo ln -s /etc/sv/mysqld /var/service/'
-alias vinfo='cat /etc/os-release | grep -E "PRETTY_NAME|VERSION_ID"'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/Dotfiles --work-tree=$HOME'
 alias kinfo='c=$(uname -r); echo "kernel-$c (current)";
             ls /boot/vmlinuz-* | sed "s#.*/vmlinuz-##" | grep -v "$c" | sort -V | sed "s/^/kernel-/"'
