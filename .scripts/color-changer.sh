@@ -23,7 +23,9 @@ bright_6=6be4e6
 bright_7=d5d8da
 
 # Path to the config files
-firefox=$HOME/.config/mozilla/firefox/11yzv5bg.default-default/chrome/theme.css
+profile_dir=$(sed -n 's/^Path=\(.*\.default-default\)$/\1/p' "$HOME/.config/mozilla/firefox/profiles.ini")
+firefox="$HOME/.config/mozilla/firefox/$profile_dir/chrome/theme.css"
+firefox_dot=$HOME/.config/mozilla/firefox/chrome/theme.css
 foot=$HOME/.config/foot/foot.ini
 fuzzel=$HOME/.config/fuzzel/fuzzel.ini
 mako=$HOME/.config/mako/config
@@ -34,11 +36,11 @@ wlogout=$HOME/.config/wlogout/style.css
 
 # Apply color palette changes to config files
 sed -i \
-  -e "s/^--base:.*/--base:           #${background};/g" \
-  -e "s/^--text:.*/--text:           #${foreground};/g" \
-  -e "s/^--overlay:.*/--overlay:        #${regular_0};/g" \
-  -e "s/^--subtle:.*/--subtle:         #${regular_1};/g" \
-  "$firefox"
+  -e "s/--base:.*/--base:#${background};/g" \
+  -e "s/--text:.*/--text:#${foreground};/g" \
+  -e "s/--subtle:.*/--subtle:#${regular_1};/g" \
+  -e "s/--overlay:.*/--overlay:#${regular_0};/g" \
+  "$firefox" "$firefox_dot"
 
 sed -i \
   -e "s/background=.*/background=${background}/g" \
