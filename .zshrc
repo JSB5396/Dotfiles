@@ -26,6 +26,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# When the shell encounters a program it does not know,
+# search for it in the XBPS repositories and suggest that the user install it
+source /usr/share/zsh/plugins/xbps-command-not-found/xbps-command-not-found.zsh
+
 # Preferred terminal text editor
 export EDITOR=hx
 export VISUAL=hx

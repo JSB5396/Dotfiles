@@ -81,7 +81,7 @@ ii freetype-2.14.1_1                  Font rendering engine and library API
 ii fribidi-1.0.16_1                   Free Implementation of the Unicode Bidirectional Algorithm
 ii fuse-2.9.9_1                       Filesystem in Userspace
 ii fuse3-3.16.2_1                     Filesystem in Userspace 3.x
-ii fuzzel-1.13.1_1                    Application launcher for wlroots based Wayland compositors
+ii fuzzel-1.14.0_1                    Application launcher for wlroots based Wayland compositors
 ii gawk-5.3.2_1                       GNU awk utility
 ii gcr4-4.4.0.1_2                     GNOME crypto package
 ii gdbm-1.26_1                        GNU database routines
@@ -188,7 +188,7 @@ ii libcdio-paranoia-10.2+2.0.1_1      CD paranoia utility/libraries from libcdio
 ii libcdparanoia-10.2_15              CDDA reading utility with extra data verification features - runtime library
 ii libcloudproviders-0.3.6_1          DBus API for cloud storage sync clients to expose their services
 ii libcolord-1.4.7_1                  System daemon for managing color devices - runtime library
-ii libcrypto3-3.5.4_1                 Toolkit for Secure Sockets Layer and Transport Layer Security - crypto library
+ii libcrypto3-3.5.5_1                 Toolkit for Secure Sockets Layer and Transport Layer Security - crypto library
 ii libcryptsetup-2.8.3_1              Setup virtual encryption devices under Linux dm-crypt - runtime libraries
 ii libcups-2.4.13_1                   Common Unix Printing System - client runtime shared libraries
 ii libcurl-8.18.0_1                   Multiprotocol file transfer library
@@ -289,6 +289,7 @@ ii libpsl-0.21.5_1                    Public Suffix List library functions
 ii libpulseaudio-16.1_2               Featureful, general-purpose sound server - shared libraries
 ii libraptor-2.0.16_2                 Raptor RDF Syntax Library - Runtime libraries
 ii libreadline8-8.2.010_1             GNU Readline Library
+ii libresvg0-0.46.0_1                 SVG rendering library written in Rust - resvg library
 ii librist-0.2.11_1                   Reliable Internet Stream Transport (RIST)
 ii librsvg-2.59.2_2                   SVG library for GNOME
 ii librtmp-2.4.20161210_10            Toolkit for RTMP streams - shared library
@@ -320,7 +321,7 @@ ii libsrt-1.5.4_2                     Secure, Reliable, Transport - development 
 ii libsrtp-2.7.0_2                    Library implementing SRTP, the Secure Real-time Transport Protocol
 ii libssh-0.11.3_1                    Multiplatform C library implementing the SSH v2 protocol
 ii libssh2-1.11.1_1                   Library implementing the SSH2 protocol
-ii libssl3-3.5.4_1                    Toolkit for Secure Sockets Layer and Transport Layer Security - SSL/TLS library
+ii libssl3-3.5.5_1                    Toolkit for Secure Sockets Layer and Transport Layer Security - SSL/TLS library
 ii libstdc++-14.2.1+20250405_4        GNU Compiler Collection - Standard C++ Library
 ii libsvt-av1-3.1.2_1                 AV1-compliant encoder/decoder library core - library files
 ii libswresample6-6.1.3_4             FFmpeg video resampling library
@@ -412,7 +413,8 @@ ii ngtcp2-1.20.0_1                    Effort to implement IETF QUIC protocol
 ii noto-fonts-cjk-1_1                 Google Noto CJK fonts (meta package)
 ii noto-fonts-cjk-sans-2.004_1        Google Noto CJK Fonts - sans serif fonts
 ii noto-fonts-cjk-serif-2.003_1       Google Noto CJK Fonts - serif fonts
-ii noto-fonts-ttf-2026.01.01_1        Google Noto TTF Fonts
+ii noto-fonts-emoji-2.051_2           Google Noto Emoji Fonts
+ii noto-fonts-ttf-2026.01.01_2        Google Noto TTF Fonts
 ii npth-1.8_1                         New portable threads library
 ii nspr-4.38.2_1                      NetScape Portable Runtime
 ii nss-3.120_1                        Mozilla Network Security Services
@@ -421,7 +423,7 @@ ii nvi-1.81.6_19                      Berkeley Vi Editor
 ii ocl-icd-2.3.2_2                    Generic OpenCL ICD loader/demultiplexer
 ii openh264-2.6.0_2                   OpenH264 is a codec library which supports H.264 encoding and decoding
 ii openssh-10.2p1_1                   OpenSSH free Secure Shell (SSH) client and server implementation
-ii openssl-3.5.4_1                    Toolkit for Secure Sockets Layer and Transport Layer Security
+ii openssl-3.5.5_1                    Toolkit for Secure Sockets Layer and Transport Layer Security
 ii opus-1.6_1                         Totally open, royalty-free, highly versatile audio codec
 ii orc-0.4.41_2                       Oild Runtime Compiler
 ii os-prober-1.84_1                   Utility to detect other OSes on a set of drives
@@ -485,7 +487,6 @@ ii tmux-3.6a_1                        Terminal Multiplexer
 ii tpm2-tss-3.2.0_6                   OSS implementation of the TCG TPM2 Software Stack
 ii traceroute-2.1.6_1                 Traces the route taken by packets over an IPv4/IPv6 network
 ii tumbler-4.20.1_1                   D-Bus Thumbnailer service
-ii twemoji-15.1.0_2                   Twitter emoji font set in color and b&w
 ii tzdata-2025c_1                     Time zone and daylight-saving time data
 ii udisks2-2.10.1_1                   Disk Management Service, version 2
 ii unrar-7.1.10_1                     Unarchiver for .rar files (non-free version)
@@ -515,6 +516,7 @@ ii wpa_supplicant-2.11_3              WPA/WPA2/IEEE 802.1X Supplicant
 ii x264-20191217.2245_1               Free library for encoding H264/AVC video streams
 ii x265-4.1_1                         Open Source H.265/HEVC video encoder
 ii xbps-0.60.6_1                      XBPS package system utilities
+ii xbps-command-not-found-1.1_1       Suggest installation of xbps packages in interactive shell sessions
 ii xbps-triggers-0.129_1              XBPS triggers for Void Linux
 ii xcb-util-0.4.1_1                   XCB utilities library
 ii xcb-util-errors-1.0.1_1            XCB errors library
