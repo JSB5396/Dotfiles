@@ -68,7 +68,7 @@ ii ffmpegthumbnailer-2.2.3_1          Lightweight video thumbnailer
 ii ffplay6-6.1.3_4                    Simple video player using FFmpeg and SDL2
 ii file-5.46_2                        File type identification utility
 ii findutils-4.10.0_1                 GNU Find Utilities
-ii firefox-147.0_1                    Mozilla Firefox web browser
+ii firefox-147.0.2_1                  Mozilla Firefox web browser
 ii flite-2.2_1                        Lightweight speech synthesis engine
 ii fmt-12.1.0_1                       Modern formatting library
 ii font-alias-1.0.5_1                 Standard aliases for X11 PCF fonts
@@ -166,6 +166,7 @@ ii libass-0.17.4_1                    Portable library for SSA/ASS subtitles ren
 ii libassuan-2.5.7_1                  IPC library used by some GnuPG related software
 ii libasyncns-0.8_9                   C library for executing name service queries asynchronously
 ii libatasmart-0.19_5                 ATA S.M.A.R.T. Reading and Parsing Library
+ii libatomic-14.2.1+20250405_4        GNU Compiler Collection - Atomics library
 ii libavcodec6-6.1.3_4                FFmpeg codec library
 ii libavdevice6-6.1.3_4               FFmpeg device handling library
 ii libavfilter6-6.1.3_4               FFmpeg audio/video filter library
@@ -372,11 +373,11 @@ ii libzbar-0.23.1_9                   Barcode reading library and application - 
 ii libzstd-1.5.7_1                    Fast real-time compression algorithm
 ii linux-6.12_1                       Linux kernel meta package
 ii linux-base-2023.05.29_1            Linux kernel base dependencies
-ii linux-firmware-amd-20251111_1      Binary firmware blobs for the Linux kernel - AMD CPU/GPU microcode
-ii linux-firmware-broadcom-20251111_1 Binary firmware blobs for the Linux kernel - Broadcom network blobs
-ii linux-firmware-intel-20251111_1    Binary firmware blobs for the Linux kernel - Intel GPU microcode
-ii linux-firmware-network-20251111_1  Binary firmware blobs for the Linux kernel - network
-ii linux-firmware-nvidia-20251111_1   Binary firmware blobs for the Linux kernel NVIDIA GPU microcode
+ii linux-firmware-amd-20260110_1      Binary firmware blobs for the Linux kernel - AMD CPU/GPU microcode
+ii linux-firmware-broadcom-20260110_1 Binary firmware blobs for the Linux kernel - Broadcom network blobs
+ii linux-firmware-intel-20260110_1    Binary firmware blobs for the Linux kernel - Intel GPU microcode
+ii linux-firmware-network-20260110_1  Binary firmware blobs for the Linux kernel - network
+ii linux-firmware-nvidia-20260110_1   Binary firmware blobs for the Linux kernel NVIDIA GPU microcode
 ii linux6.12-6.12.67_1                Linux kernel and modules (6.12 series)
 ii llhttp-9.3.0_1                     Port of http_parser to llparse
 ii logrotate-3.22.0_1                 Log file rotation and periodic maintenance
@@ -461,7 +462,7 @@ ii procps-ng-4.0.5_1                  Utilities for monitoring your system and i
 ii public-suffix-2026.01.13_1         Public Suffix List
 ii pulseaudio-utils-16.1_2            Featureful, general-purpose sound server - utilities
 ii python3-3.14.2_2                   Python programming language (3.14 series)
-ii removed-packages-0.1.20260120_1    Uninstalls packages removed from repository
+ii removed-packages-0.1.20260130_1    Uninstalls packages removed from repository
 ii run-parts-5.23.2_1                 Run scripts or programs in a directory
 ii runit-2.3.0_2                      UNIX init scheme with service supervision
 ii runit-void-20250212_2              Void Linux runit scripts
@@ -494,7 +495,7 @@ ii unzip-6.0_15                       List, test and extract compressed files in
 ii usbutils-019_1                     Linux USB utilities
 ii util-linux-2.41.2_1                Miscellaneous linux utilities
 ii util-linux-common-2.41.2_1         Miscellaneous linux utilities - common files
-ii v4l-utils-1.28.1_2                 Userspace tools and libraries for Video 4 Linux
+ii v4l-utils-1.32.0_1                 Userspace tools and libraries for Video 4 Linux
 ii vmaf-3.0.0_1                       Perceptual video quality assessment algorithm developed by Netflix
 ii void-artwork-20221013_1            Void Linux artwork
 ii void-docs-2025.01.25_1             Documentation for Void Linux
@@ -516,7 +517,6 @@ ii wpa_supplicant-2.11_3              WPA/WPA2/IEEE 802.1X Supplicant
 ii x264-20191217.2245_1               Free library for encoding H264/AVC video streams
 ii x265-4.1_1                         Open Source H.265/HEVC video encoder
 ii xbps-0.60.6_1                      XBPS package system utilities
-ii xbps-command-not-found-1.1_1       Suggest installation of xbps packages in interactive shell sessions
 ii xbps-triggers-0.129_1              XBPS triggers for Void Linux
 ii xcb-util-0.4.1_1                   XCB utilities library
 ii xcb-util-errors-1.0.1_1            XCB errors library
